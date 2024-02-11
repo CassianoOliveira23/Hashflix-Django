@@ -9,7 +9,7 @@
         <h1>Home filmes</h1>
         {% for filme in object_list %}
         <hr>
-        <p>{{ filme }}</p>
+        <a href="{% url 'filme:detalhesfilme' filme.id %}"><p>{{ filme.titulo }}</p></a>
         <p>{{ filme.descricao }}</p>
         <img src="{{ filme.thumb.url }}">
         {% endfor %}

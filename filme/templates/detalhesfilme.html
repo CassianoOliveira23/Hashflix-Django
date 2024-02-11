@@ -5,8 +5,30 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Detalhes do filme {{ objects.titulo }}</h1>
-    <p>{{ object }} </p>
-    <p>{{ object.descricao }} </p>
-    <img src="{{ object.thumb.url }}">
+    <div class="py-10">
+        <h1>Detalhes do filme {{ objects.titulo }}</h1>
+        <p>{{ object }} </p>
+        <p>{{ object.descricao }} </p>
+        <img src="{{ object.thumb.url }}">
+
+        <h2>Episódios</h2>
+        {% for episodio in object.episodios.all %}
+            <a href="{{ episodio.video }}">
+                <p>Episodio {{ forloop.counter }}: {{ episodio.titulo }} </p>
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="py-10">
+        <h2>Filmes Relacionados</h2>
+        {% for filme in filmes_relacionados %}
+            <p>
+                <a href="{% url 'filme:detalhesfilme' filme.id %}">
+                    {{ filme.titulo  }}
+                </a>
+            </p>
+        {% endfor %}
+    </div>
+    
+   
 {% endblock %}
