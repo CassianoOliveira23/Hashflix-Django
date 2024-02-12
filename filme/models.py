@@ -2,10 +2,12 @@ from django.db import models
 from django.utils import timezone
 
 LISTA_CATEGORIAS = (
-    ("ANALISES", "Análises"),
+    ("ACAO", "Ação"),
+    ("TERROR", "Terror"),
+    ("COMEDIA", "Comédia"),
+    ("FANTASIA", "Fantasia"),
     ("PROGRAMACAO", "Programação"),
-    ("APRESENTACAO", "Apresentação"),
-    ("OUTROS", "Outros"),
+    ("SERIES", "Séries"),
 )
 
 
