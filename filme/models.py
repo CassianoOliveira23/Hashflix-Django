@@ -7,6 +7,9 @@ LISTA_CATEGORIAS = (
     ("COMEDIA", "Comédia"),
     ("FANTASIA", "Fantasia"),
     ("PROGRAMACAO", "Programação"),
+    ("APRESENTACAO", "Apresentação"),
+    ("ANALISES", "Análises"),
+    ("OUTROS", "Outros"),
     ("SERIES", "Séries"),
 )
 

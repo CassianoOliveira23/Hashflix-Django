@@ -6,77 +6,79 @@
 {% endblock %}
 
 
+
+
 {% block head %}
-    <style>
+    <style> 
         $itemGrow: 1.2;
         $duration: 250ms;
 
         html {
-        scroll-behavior: smooth;
+            scroll-behavior: smooth;
         }
 
         body {
-        margin: 0;
-        background-color: #000;
+            margin: 0;
+            background-color: #000;
         }
 
         h1 {
-        font-family: Arial;
-        color: red;
-        text-align: center;
+            font-family: Arial;
+            color: red;
+            text-align: center;
         }
 
         .wrapper {
-        display: grid;
-        grid-template-columns: repeat(3,100%);
-        overflow:hidden;
-        scroll-behavior: smooth;
+            display: grid;
+            grid-template-columns: repeat(3,100%);
+            overflow:hidden;
+            scroll-behavior: smooth;
 
-        section {
-            width: 100%;
-            position: relative;
-            margin: 20px 0;
+            section {
+                width: 100%;
+                position: relative;
+                margin: 20px 0;
 
-            .item {
-            padding: 0 2px;
-            transition: $duration all;
+                .item {
+                    padding: 0 2px;
+                    transition: $duration all;
 
-            &:hover {
-                margin: 0 40px;
-                transform: scale(1.2);
-            }
+                &:hover {
+                    margin: 0 40px;
+                    transform: scale(1.2);
+                }
 
-            }
-            
-            a {
-            /* position: absolute; */
-            color: #fff;
-            text-decoration: none;
-            font-size: 6em;
-            background:rgb(0,0,0);
-            text-align: center;
-            z-index: 1;
+                }
+                
+                a {
+                    /* position: absolute; */
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 6em;
+                    background:rgb(0,0,0);
+                    text-align: center;
+                    z-index: 1;
 
-            }
+                }
 
-            &>a:first-child {
-            position: absolute;
-                left:0;
-                background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-            }
-            &>a:last-child {
-                position: absolute;
-                right: 0;
-                background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+                &>a:first-child {
+                    position: absolute;
+                        left:0;
+                        background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+                    }
+                &>a:last-child {
+                    position: absolute;
+                    right: 0;
+                    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+                }
             }
         }
-        }
 
-        // Remove the arrow for Mobile
-        @media only screen and (max-width: 600px) {
-        a.arrow__btn {
-            display:none;
-        }
+            // Remove the arrow for Mobile
+            @media only screen and (max-width: 600px) {
+            a.arrow__btn {
+                display:none;
+            }
         }
     </style>
 {% endblock %}
@@ -84,16 +86,16 @@
 {% block content %}
 
     <main class='bg-primary_black min-h-screen w-full'>
-        <section class="h-screen relative bg-no-repeat pb-8 pl-6 flex items-end bg-cover" style="background-image: url('{% static 'images/python.png' %}');">
+        <section class="h-screen relative bg-no-repeat pb-8 pl-6 flex items-end bg-cover" style="background-image: url('{{ filme_destaque.thumb.url }}');">
             <div>
                 <h2 class="text-6xl font-semibold text-white my-4">
-                    Título
+                    {{ filme_destaque.titulo }}
                 </h2>
                 <p class=" w-11/12 md:w-5/12 font-medium text-white my-4">
-                    Descrição
+                    {{ filme_destaque.descricao }}
                 </p>
                 <div class="flex my-4">
-                    <a href="#">
+                    <a href="{% url 'filme:detalhesfilme' filme_destaque.id %}">
                         <button class="flex items-center bg-red-600 py-2 px-5" style='color:white;'>
                             <ion-icon name="play" class="text-2xl"></ion-icon>
                             <span class="ml-3 font-medium text-white" >
@@ -108,7 +110,7 @@
         <!--Filmes novos-->
         <section class='bg-primary_black flex justify-center py-10'>
             <div class="p-8 w-12/12 relative" >
-                <h2 class="text-gray-200 text-2xl font-medium">
+                <h2 class="text-gray-200 text-3xl font-medium">
                     Novos na Hashflix
                 </h2>
                 <div class="wrapper">
@@ -148,7 +150,7 @@
         <!--Em Alta-->
         <section class='bg-primary_black flex justify-center py-10'>
             <div class="p-8 w-12/12 relative" >
-                <h2 class="text-gray-200 text-2xl font-medium">
+                <h2 class="text-gray-200 text-3xl font-medium">
                     Em Alta
                 </h2>
                 <div class="wrapper">
@@ -183,5 +185,4 @@
                     </div>
             </div>
         </section>
-    </main>
 {% endblock %}
