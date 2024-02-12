@@ -1,4 +1,5 @@
 from typing import Any
+from django.db.models.query import QuerySet
 from django.shortcuts import render
 from .models import Filme
 from django.views.generic import TemplateView, ListView, DetailView
@@ -36,7 +37,20 @@ class Detalhesfilme(DetailView):
     
     def get_context_data(self, **kwargs):
         context = super(Detalhesfilme, self).get_context_data(**kwargs)
-        filmes_relacionados = Filme.objects.filter(categoria=self.get_object().categoria)[0:10]
+        filmes_relacionados = self.model.objects.filter(categoria=self.get_object().categoria)[0:10]
         context["filmes_relacionados"] = filmes_relacionados
         return context
+
+
+class Pesquisa_filme(ListView):
+    template_name = "pesquisa.html"
+    model = Filme
+    
+    def get_queryset(self):
+        termo_pesquisa = self.request.GET.get('query')
         
+        if termo_pesquisa:
+            object_list = self.model.objects.filter(titulo__icontains=termo_pesquisa)
+            return object_list
+        else:
+            return None
