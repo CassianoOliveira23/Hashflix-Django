@@ -5,6 +5,7 @@ from .models import Filme
 from django.views.generic import TemplateView, ListView, DetailView
 
 
+
 class Homepage(TemplateView):
     template_name = "homepage.html"
     
@@ -32,6 +33,8 @@ class Detalhesfilme(DetailView):
         filme = self.get_object()
         filme.visualizacoes += 1
         filme.save()
+        usuario = request.user
+        usuario.filmes_vistos.add(filme)
         return super().get(request, *args, **kwargs) 
         
     
