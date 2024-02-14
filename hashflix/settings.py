@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-xz03($o6qco95c83y#la&8&jg&l_*6y-+0)^*4_tjwq)w-qfpz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*rements.txt"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
