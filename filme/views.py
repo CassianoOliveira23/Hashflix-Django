@@ -1,16 +1,23 @@
 from typing import Any
 from django.db.models.query import QuerySet
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Filme
 from django.views.generic import TemplateView, ListView, DetailView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 
 class Homepage(TemplateView):
     template_name = "homepage.html"
     
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return redirect('filme:homefilmes')  
+        else:
+            return super().get(request, *args, **kwargs)
+    
 
-class Homefilmes(ListView):
+class Homefilmes(LoginRequiredMixin, ListView):
     template_name = "homefilmes.html"
     model = Filme
     
@@ -25,7 +32,7 @@ class Homefilmes(ListView):
 '''
 
     
-class Detalhesfilme(DetailView):
+class Detalhesfilme(LoginRequiredMixin, DetailView):
     template_name = "detalhesfilme.html"
     model = Filme
     
@@ -45,7 +52,7 @@ class Detalhesfilme(DetailView):
         return context
 
 
-class Pesquisa_filme(ListView):
+class Pesquisafilme(LoginRequiredMixin, ListView):
     template_name = "pesquisa.html"
     model = Filme
     
@@ -57,3 +64,10 @@ class Pesquisa_filme(ListView):
             return object_list
         else:
             return None
+        
+
+class Paginaperfil(LoginRequiredMixin, TemplateView):
+    template_name = "editarperfil.html"
+    
+class Criarconta (TemplateView):
+    template_name = "criarconta.html"
