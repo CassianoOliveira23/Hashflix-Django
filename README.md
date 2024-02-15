@@ -1,75 +1,80 @@
 <h1 align="center">hashflix</h1>
 
-![homefilmes](https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/f222965e-768c-495b-8d9d-ba6b89fdd469)
+![thumbbatman](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/4541bab1-d12e-458e-ae39-9ce6c2a6716f)
 
-<h3>Plataforma de cursos com layout da netflix</h3>
+<h3>Projeto Hashflix</h3>
 
-<p>Neste projeto clone da Netflix, desenvolvi uma plataforma de cursos online da comunidade impressionadora da Hashtag com um sistema de login e autenticação completo.</p>
+<p>Neste projeto clone da Netflix, desenvolvido em parceria com o curso de Python da Comunidade Impressionadora da Hashtag, onde além de poder ver filmes e séries ainda pode ver os cursos da plataforma. Com um sistema de login e autenticação completo você pode criar uma conta, e editar perfil.</p>
 
 
 ---
 
-Ferramentas Utilizadas:
+Ferramentas Utilizadas No Back-End:
 - Python <img align="center" height="20" width="30" alt="js-icon"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
 - Django 4.2.9
-- Tailwind
-- Bootstrap
-- Sqlite
+- Sqlite3
+
+Ferramentas Utilizadas No Front-End:
+- HTML
+- CSS
+- JavaScript
+- Bootstrap JS
+- Tailwind CSS
 
 ---
 
 <h1>Homepage</h1>
 
 <p>Ao acessar a home page você poderá digitar o seu e-mail para acessar</p>
+<p>Caso seja a seu primeiro acesso, ao digitar seu email e clicar em acessar o sistema vai direciona-lo para a página de Criar Conta</p>
 
-![homepage](https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/0a801288-943d-4627-b4fd-aaa6e6779b4e)
+![homepage](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/076acaaf-88b3-40cc-b1ca-17b30c5d43d1)
 
 
 ---
 
 <h1>Criar Conta</h1>
 
-<p>Caso seja a seu primeiro acesso, ao digitar seu email e clicar em acessar o sistema vai direciona-lo para a página de Criar Conta</p>
-<p>O sistema vai verificar todas as validações, para não gerar usuários duplicados, as senhas deverão ter no mínimo 8 caracteres, não poderão ser inteiramente numéricas, e não poderão ser similares a qualisquer ouitras informações como o e-mail e nome de usuário</p>
+<p>O sistema vai verificar todas as validações, para não gerar usuários duplicados, as senhas deverão ter no mínimo 8 caracteres, não poderão ser inteiramente numéricas, e não poderão ser similares a qualisquer outras informações como o e-mail e nome de usuário</p>
 <br>
 
-![criarconta](https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/5992c196-f126-4b0d-9f94-34e7905831a9)
+![criarconta](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/3c979dcc-f535-49e6-af73-e974b90d321a)
 
 ---
 
 <h1>Login</h1>
 
-<p>Se você já possui uma conta o sistema vai direciona-lo para a página de Login</p>
+<p>Ao criar uma conta o sistema direciona para a página de login. Se você já possui uma conta o sistema também vai direcioná-lo para o Login</p>
 
-![login](https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/3fc26a9b-41c4-4618-a570-e1bcaabe2585)
+![login](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/6a33080f-0c59-45da-bb90-431c975b2151)
 
 ---
 
-<h1>Homecursos</h1>
+<h1>Home</h1>
 
 <p>Ao fazer login o sistema direcionará para a pagina principal</p>
-<p>Aqui você poderá visualizar todos os cursos disponíveis na plataforma, os cursos em alta,  novos cursos e a opção de continuar assistindo o curso</p>
+<p>Aqui você poderá visualizar todos os Filmes, Séries e  Cursos disponíveis na plataforma, os Filmes em alta,  novos Filmes e a opção de continuar assistindo</p>
 
 <p>Assista o video:</p>
 
-https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/fe2b030d-2fc6-463f-b78d-9b5282bb36fc
+https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/41f4facc-4106-412e-a0b1-bda8162519ad
 
 
 ---
 
-<h1>Detalhes Curso</h1>
+<h1>Página de Detalhes</h1>
 
-<p>Na homecursos ao clicar em um determinado curso você será direcionado para a página de detalhes onde será possivel ver a descrição do curso, os episódios, e cursos relacionados</p>
+<p>Na home ao clicar em um determinado Filme/série você será direcionado para a página de detalhes onde será possivel ver a descrição do filme, os episódios se for uma série ou curso, quantidade de visualizações e relacionados</p>
 
-![detalhesfimle](https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/8d297334-04a5-4986-ac34-51cd8fb57903)
+![detalhesfilme](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/73d4e3fb-217c-41f0-b801-af145b6eaae9)
 
 ---
 
 <h1>Editar Perfil</h1>
 
-<p>Na barra de navegação ao clicar em "Editar Perfil", você será direcionado para a página de edição</p>
+<p>Na barra de navegação ao clicar em "Editar Perfil", você será direcionado para a página de edição onde é possível alterar seu nome e e-mail</p>
 
-![editarperfil](https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/6fd492a9-3e9a-4f81-8c56-a9a41529bf34)
+![editar perfil](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/b1aa08b1-5e07-40ba-9073-22d662edd0ab)
 
 ---
 
@@ -77,19 +82,19 @@ https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/fe2b030d-
 
 <p>Em "Editar Perfil", você poderá alterar a sua senha</p>
 
-![senha](https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/e8603d89-76b4-4052-b20b-65db159acc9e)
+![senha](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/38d44fc9-efa8-4f9e-af82-4daf95caa436)
 
 ---
 
 <h1>Pesquisar</h1>
-<p>Na barra de navegação ao clicar em "Pesquisar", você pode digitar o curso que você procura</p>
+<p>Na barra de navegação ao clicar em "Pesquisar", você pode digitar o filme que você procura</p>
 
-![busca](https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/157c98bf-4d4d-4529-abb5-f883d580ed08)
+![pesquisar](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/a22f1fb4-5815-47c1-aa5e-529a3e1f7efc)
 
 ---
 
 <h1>Sair</h1>
 
-![sair](https://github.com/CassianoOliveira23/Hashflix-django/assets/130614345/a7bebb8f-bc8a-4b4c-8b9d-3b74da3da693)
+![sair](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/ec38fa70-5675-4faa-b17b-af0bb3c1c575)
 
 ---
