@@ -1,6 +1,6 @@
-<h1 align="center">Projeto Hashflix</h1>
+<h1 align="center">Hashflix</h1>
 
-<p>Neste projeto clone da Netflix, desenvolvido em parceria com o curso de Python da Comunidade Impressionadora da Hashtag, onde além de poder ver filmes e séries ainda pode ver os cursos da plataforma. Com um sistema de login e autenticação completo você pode criar uma conta, e editar perfil.</p>
+<p>Neste projeto clone da Netflix, desenvolvido em parceria com o curso de Python da Comunidade Impressionadora da Hashtag, onde além de poder ver filmes e séries ainda poderá ver os cursos da plataforma. Com um sistema de login e autenticação completo você pode criar uma conta, e editar perfil.</p>
 
 ![thumbbatman](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/4541bab1-d12e-458e-ae39-9ce6c2a6716f)
 
