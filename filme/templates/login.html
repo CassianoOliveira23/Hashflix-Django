@@ -2,13 +2,12 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-
 {% block titulo %}
     Fazer Login
 {% endblock %}
 
 {% block content %}
-    <header class="min-h-screen bg-black bg-opacity-75 bg-blend-overlay showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat"  style="background-image: url('{% static 'images/background_netflix.jpg' %}');">
+    <header class="min-h-screen min-w-screen bg-black bg-opacity-75 bg-blend-overlay showcase border-gray-600 border-b-8 flex justify-center items-center bg-center bg-fixed bg-cover"  style="background-image: url('{% static 'images/background_netflix.jpg' %}');">
         <div class="z-10 h-full py-32 md:py-0 text-gray-100 text-center flex items-center flex-col">
             <form method="post">
                 {% csrf_token %}
@@ -25,9 +24,9 @@
     </header>
 
     <footer class=" px-5 py-10 ">
-        <ul class="flex justify-between items-center">
+        <ul class="flex justify-between items-center text-xs sm:text-sm">
 
-            <li>&copy; 2021</li>
+            <li>&copy; 2023</li>
             <li> Desenvolvido com Python (Django)</li>
             <li>
                 <a href="https://github.com/CassianoOliveira23" target="_blank">

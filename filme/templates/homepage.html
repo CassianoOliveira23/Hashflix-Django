@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
-
 {% load static %}
 
 {% block titulo %}
     HomePage Hashflix
 {% endblock %}
-
 
 {% block head %}
    <style>
@@ -19,8 +17,7 @@
 {% endblock %}
 
 {% block content %}
-
-    <header class="min-h-screen bg-black bg-opacity-75 bg-blend-overlay showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat"  style="background-image: url('{% static 'images/background_netflix.jpg' %}');">
+    <header class="min-h-screen bg-black bg-opacity-75 bg-blend-overlay showcase border-gray-600 border-b-8 flex justify-center items-center bg-center bg-fixed bg-cover"  style="background-image: url('{% static 'images/background_netflix.jpg' %}');">
         <div class="z-10 h-full py-32 md:py-0 text-gray-100 text-center flex items-center flex-col">
 
             <h1 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center">
@@ -35,12 +32,12 @@
 
             <div class="w-full flex justify-center">
                 <div class="flex justify-center items-center w-11/12 md:w-10/12">
-                    <form method="post" class="w-4/12 justify-center">
+                    <form method="post" class="justify-center">
                         {% csrf_token %}
                         <div class="flex flex-grow items-stretch">
                             {{ form }}
                         <button class="bg-red-600 font-medium md:font-normal flex justify-center items-center py-2 px-3 md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl" type="submit">
-                            <span class="py-1">
+                            <span>
                                 Acessar
                             </span>
                             <ion-icon name="chevron-forward-outline" class="text-2xl"></ion-icon>
