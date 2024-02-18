@@ -10,7 +10,7 @@
 
 Back-End:
   - Python <img align="center" height="20" width="30" alt="js-icon"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  - Django 4.2.9
+  - Django
   - Sqlite3
 
  Front-End:
