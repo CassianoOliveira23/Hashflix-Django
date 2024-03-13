@@ -25,7 +25,7 @@ Back-End:
 <h2>Homepage</h2>
 
 <p>when you access the homepage you can enter your email to access</p>
-<p>If this is your first access, entering your email and clicking on access the system will direct you to the Create Account page</p>
+<p>If this is your first access, entering your email and clicking on access, the system will direct you to the Create Account page</p>
 
 ![homepage](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/076acaaf-88b3-40cc-b1ca-17b30c5d43d1)
 
@@ -44,7 +44,7 @@ Back-End:
 
 <h2>Login</h2>
 
-<p>When creating an account, the system directs you to the login page. If you already have an account, the system will also direct you to Login</p>
+<p>When you create an account, the system directs you to the login page. If you already have an account, the system will also direct you to Login</p>
 
 ![login](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/6a33080f-0c59-45da-bb90-431c975b2151)
 
@@ -52,7 +52,7 @@ Back-End:
 
 <h2>Home</h2>
 
-<p>When logging in, the system will direct you to the main page</p>
+<p>When  you log in, the system will direct you to the main page</p>
 <p>Here you can view all the Films, Series and Courses available on the platform, trending Films, new Films and the option to continue watching</p>
 
 <p>Check it out:</p>
@@ -64,7 +64,7 @@ https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/41f4facc-
 
 <h2>Detail Page</h2>
 
-<p>On the home page, when you click on a specific film/series, you will be directed to the details page where you will be able to see the description of the film, the episodes if it is a series or course, number of views and related items</p>
+<p>On the home page, when you click on a specific film/series or corse, you will be directed to the details page where you will be able to see the description of the film, the episodes if it is a series or course, number of views and related items</p>
 
 ![detalhesfilme](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/73d4e3fb-217c-41f0-b801-af145b6eaae9)
 
@@ -87,7 +87,7 @@ https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/41f4facc-
 ---
 
 <h2>Search</h2>
-<p>In the navigation bar when you click "Search", you can type the movie you are looking for</p>
+<p>In the navigation bar when you click "Search", you can type the movie/corse you are looking for</p>
 
 ![pesquisar](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/a22f1fb4-5815-47c1-aa5e-529a3e1f7efc)
 
