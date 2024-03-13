@@ -24,7 +24,7 @@ Back-End:
 
 <h2>Homepage</h2>
 
-<p>When accessing the home page you can enter your email to access</p>
+<p>when you access the homepage you can enter your email to access</p>
 <p>If this is your first access, entering your email and clicking on access the system will direct you to the Create Account page</p>
 
 ![homepage](https://github.com/CassianoOliveira23/Hashflix-Django/assets/130614345/076acaaf-88b3-40cc-b1ca-17b30c5d43d1)
